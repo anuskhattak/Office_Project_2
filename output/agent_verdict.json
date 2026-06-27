@@ -1,0 +1,22 @@
+{
+  "publish": true,
+  "summary": "6 minor quality issue(s) detected but no critical failures \u2014 data is safe to publish with warnings.",
+  "root_causes": [
+    "medications.adherence_rate_zscore: 720 rows \u2014 MINOR: low count, no referential integrity impact.",
+    "vitals.spo2_zscore_outliers: 117 rows \u2014 MINOR: low count, no referential integrity impact.",
+    "vitals.heart_rate_zscore_outliers: 141 rows \u2014 MINOR: low count, no referential integrity impact.",
+    "vitals.temperature_zscore_outliers: 119 rows \u2014 MINOR: low count, no referential integrity impact.",
+    "vitals.systolic_bp_zscore_outliers: 211 rows \u2014 MINOR: low count, no referential integrity impact.",
+    "vitals.diastolic_bp_zscore_outliers: 526 rows \u2014 MINOR: low count, no referential integrity impact."
+  ],
+  "recommendations": [
+    "Review medications.adherence_rate_zscore \u2014 acceptable to publish with monitoring.",
+    "Review vitals.spo2_zscore_outliers \u2014 acceptable to publish with monitoring.",
+    "Review vitals.heart_rate_zscore_outliers \u2014 acceptable to publish with monitoring.",
+    "Review vitals.temperature_zscore_outliers \u2014 acceptable to publish with monitoring.",
+    "Review vitals.systolic_bp_zscore_outliers \u2014 acceptable to publish with monitoring.",
+    "Review vitals.diastolic_bp_zscore_outliers \u2014 acceptable to publish with monitoring."
+  ],
+  "agent_timestamp": "2026-06-26T10:22:00.320091+00:00",
+  "report_run_timestamp": "2026-06-26T10:20:28"
+}

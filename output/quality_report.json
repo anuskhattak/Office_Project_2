@@ -1,0 +1,201 @@
+{
+  "run_timestamp": "2026-06-26T10:20:28",
+  "overall_pass": false,
+  "tables": {
+    "patients": {
+      "row_count": 7393,
+      "checks": {
+        "null_patient_id": {
+          "pass": true,
+          "count": 0
+        },
+        "future_dob": {
+          "pass": true,
+          "count": 0
+        },
+        "dob_before_1900": {
+          "pass": true,
+          "count": 0
+        },
+        "duplicate_pk": {
+          "pass": true,
+          "count": 0
+        }
+      }
+    },
+    "encounters": {
+      "row_count": 30498,
+      "checks": {
+        "null_encounter_id": {
+          "pass": true,
+          "count": 0
+        },
+        "future_encounter_date": {
+          "pass": true,
+          "count": 0
+        },
+        "encounter_date_before_1900": {
+          "pass": true,
+          "count": 0
+        },
+        "fk_patient_id": {
+          "pass": true,
+          "count": 0
+        },
+        "fk_provider_id": {
+          "pass": true,
+          "count": 0
+        },
+        "duplicate_pk": {
+          "pass": true,
+          "count": 0
+        }
+      }
+    },
+    "diagnoses": {
+      "row_count": 69052,
+      "checks": {
+        "null_diagnosis_id": {
+          "pass": true,
+          "count": 0
+        },
+        "onset_date_before_1900": {
+          "pass": true,
+          "count": 0
+        },
+        "fk_encounter_id": {
+          "pass": true,
+          "count": 0
+        },
+        "icd10_format": {
+          "pass": true,
+          "count": 0
+        },
+        "duplicate_pk": {
+          "pass": true,
+          "count": 0
+        }
+      }
+    },
+    "lab_results": {
+      "row_count": 111817,
+      "checks": {
+        "null_lab_id": {
+          "pass": true,
+          "count": 0
+        },
+        "fk_encounter_id": {
+          "pass": true,
+          "count": 0
+        },
+        "fk_patient_id": {
+          "pass": true,
+          "count": 0
+        },
+        "duplicate_pk": {
+          "pass": true,
+          "count": 0
+        }
+      }
+    },
+    "medications": {
+      "row_count": 70248,
+      "checks": {
+        "null_medication_id": {
+          "pass": true,
+          "count": 0
+        },
+        "fk_encounter_id": {
+          "pass": true,
+          "count": 0
+        },
+        "fk_patient_id": {
+          "pass": true,
+          "count": 0
+        },
+        "adherence_rate_range": {
+          "pass": true,
+          "count": 0
+        },
+        "adherence_rate_zscore": {
+          "pass": false,
+          "count": 720
+        },
+        "duplicate_pk": {
+          "pass": true,
+          "count": 0
+        }
+      }
+    },
+    "providers": {
+      "row_count": 458,
+      "checks": {
+        "null_provider_id": {
+          "pass": true,
+          "count": 0
+        },
+        "duplicate_pk": {
+          "pass": true,
+          "count": 0
+        }
+      }
+    },
+    "vitals": {
+      "row_count": 38320,
+      "checks": {
+        "null_vitals_id": {
+          "pass": true,
+          "count": 0
+        },
+        "fk_encounter_id": {
+          "pass": true,
+          "count": 0
+        },
+        "spo2_range": {
+          "pass": true,
+          "count": 0
+        },
+        "spo2_zscore_outliers": {
+          "pass": false,
+          "count": 117
+        },
+        "heart_rate_range": {
+          "pass": true,
+          "count": 0
+        },
+        "heart_rate_zscore_outliers": {
+          "pass": false,
+          "count": 141
+        },
+        "temperature_range": {
+          "pass": true,
+          "count": 0
+        },
+        "temperature_zscore_outliers": {
+          "pass": false,
+          "count": 119
+        },
+        "systolic_bp_range": {
+          "pass": true,
+          "count": 0
+        },
+        "systolic_bp_zscore_outliers": {
+          "pass": false,
+          "count": 211
+        },
+        "diastolic_bp_range": {
+          "pass": true,
+          "count": 0
+        },
+        "diastolic_bp_zscore_outliers": {
+          "pass": false,
+          "count": 526
+        },
+        "duplicate_pk": {
+          "pass": true,
+          "count": 0
+        }
+      }
+    }
+  }
+}

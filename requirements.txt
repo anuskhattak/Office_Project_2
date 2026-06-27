@@ -1,0 +1,5 @@
+pyspark==3.5.3
+numpy>=1.26
+matplotlib>=3.8
+python-dotenv>=1.0
+apache-airflow==2.9.3
